@@ -1,3 +1,11 @@
+acme_hello:
+    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+inmueble_number:
+    path:     /inmueble/number/{count}
+    defaults: { _controller: AppBundle:Inmueble:number }

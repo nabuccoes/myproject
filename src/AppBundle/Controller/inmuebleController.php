@@ -6,15 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class inmuebleController extends Controller
+class InmuebleController extends Controller
 {
     /**
-     * @Route("/Inmueble/number")
+     * @Route("/inmueble/number")
      */
-    public function showAction($inmueble_Id)
+    public function indexAction($number)
     {
-        return new Response(
-            '<html><body>Inmueble number: '.$inmueble_Id.'</body></html>'
-        );
+        return new Response('<html><body>Inmueble número: '.$number.'!</body></html>');
     }
 }
