@@ -1,0 +1,12 @@
+InmuebleBundle\Entity\Inmueble:
+    properties:
+        name:
+            - NotBlank: ~
+        description:
+            - NotBlank: ~
+        price:
+            - NotBlank: ~
+        email:
+            - Email:
+              mensaje: The email "{{ value }}" is not a valid email.
+              checkMX: true

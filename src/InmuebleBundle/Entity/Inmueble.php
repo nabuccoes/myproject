@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Inmueble
  *
- * @ORM\Table(name="recipe", indexes={@ORM\Index(name="fk_recetas_usuario1_idx", columns={"user_id"})})
+ * @ORM\Table(name="inmueble", indexes={@ORM\Index(name="fk_inmuebles_usuario1_idx", columns={"user_id"})})
  * @ORM\Entity
  */
 class Inmueble
@@ -90,10 +90,10 @@ class Inmueble
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Category", inversedBy="recipe")
-     * @ORM\JoinTable(name="recipe_has_category",
+     * @ORM\ManyToMany(targetEntity="Category", inversedBy="inmueble")
+     * @ORM\JoinTable(name="inmueble_has_category",
      *   joinColumns={
-     *     @ORM\JoinColumn(name="recipe_id", referencedColumnName="id")
+     *     @ORM\JoinColumn(name="inmueble_id", referencedColumnName="id")
      *   },
      *   inverseJoinColumns={
      *     @ORM\JoinColumn(name="category_id", referencedColumnName="id")
@@ -105,10 +105,10 @@ class Inmueble
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Ingredient", inversedBy="recipe")
-     * @ORM\JoinTable(name="recipe_has_ingredient",
+     * @ORM\ManyToMany(targetEntity="Ingredient", inversedBy="inmueble")
+     * @ORM\JoinTable(name="inmueble_has_ingredient",
      *   joinColumns={
-     *     @ORM\JoinColumn(name="recipe_id", referencedColumnName="id")
+     *     @ORM\JoinColumn(name="inmueble_id", referencedColumnName="id")
      *   },
      *   inverseJoinColumns={
      *     @ORM\JoinColumn(name="ingredient_id", referencedColumnName="id")
