@@ -1,0 +1,38 @@
+inmueble_list:
+    path:     /{_locale}/inmueble
+    defaults: { _controller: InmuebleBundle:Inmueble:getAll , _locale: en }
+    requirements:
+        _locale: en|es
+
+inmueble_add:
+    path:      /{_locale}/inmuebleadd
+    defaults:  {  _controller: InmuebleBundle:Inmueble:add , _locale: en }
+    requirements:
+        _locale: en|es
+
+inmueble_mod:
+    path:      /{_locale}/inmueblemod/{id}
+    defaults:  {  _controller: InmuebleBundle:Inmueble:mod , _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+inmueble_del:
+    path:      /{_locale}/inmuebledel/{id}
+    defaults:  {  _controller: InmuebleBundle:Inmueble:del , _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+inmueble_get:
+    path:      /{_locale}/inmueble{id}
+    defaults:  {  _controller: InmuebleBundle:Inmueble:getById , _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+inmueble_get_slug:
+    path:      /{_locale}/inmueble-slug/{slug}
+    defaults:  {  _controller: InmuebleBundle:Inmueble:getBySlug , _locale: en }
+    requirements:
+        _locale: en|es
