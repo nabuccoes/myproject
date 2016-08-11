@@ -1,0 +1,8 @@
+services:
+#    inmueble.example:
+#        class: InmuebleBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+
+    inmuebles.by_owner:
+        class: InmuebleBundle\Model\InmueblesByOwner
+        arguments: ["@doctrine.orm.entity_manager"]
