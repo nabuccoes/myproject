@@ -15,6 +15,9 @@ class InmuebleController extends Controller
             ->getRepository('InmuebleBundle:Inmueble')
             ->findAll();
 
+        $logger = $this->get('logger');
+        $logger->info('Listamos todos los inmuebles');
+
         return $this->render('InmuebleBundle:Default:list.html.twig', ['inmuebles' => $inmuebles]);
     }
 
