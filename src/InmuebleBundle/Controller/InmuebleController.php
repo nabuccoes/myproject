@@ -27,7 +27,8 @@ class InmuebleController extends Controller
 
     public function getByUserIdAction($userId)
     {
-        return $this->render('InmuebleBundle:Default:list.html.twig', ['inmuebles' => $this->get('inmuebles.by_user')->getRecipsByAuthorId($userId)]);
+        $inmuebles = $this->getDoctrine()->getRepository("InmuebleBundle:Inmueble")->findByUser($userId);
+        return $this->render('InmuebleBundle:Default:list.html.twig', ['inmuebles' => $inmuebles]);
     }
 
     public function getBySlugAction($slug)
