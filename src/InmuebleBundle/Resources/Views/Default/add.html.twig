@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             	<div class="page-header">
-            	  <h1>Inmueble <small>Añadir nuevo inmueble</small></h1>
+            	  <h1>{{ Inmueble | trans }} <small>{{ Anadir nuevo inmueble | trans }}</small></h1>
             	</div>
             </div>
         </div>
@@ -16,43 +16,43 @@
 
                 <div class="form-group">
                     {{ form_label(form.name) }}
-                    {{ form_widget(form.name, { 'attr' : {'class' : 'form-control', 'placeholder' : 'Nombre del inmueble'} }) }}
+                    {{ form_widget(form.name, { 'attr' : {'class' : 'form-control', 'placeholder' : 'Nombre del inmueble'  | trans } }) }}
                     <span class="text-danger">{{ form_errors(form.name) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.description) }}
-                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder' : "Introduce la descripción" }}) }}
+                    {{ form_widget(form.description, {'attr': {'class': 'form-control', 'placeholder' : "Descripcion"  | trans }}) }}
                     <span class="text-danger">{{ form_errors(form.description) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.price) }}
-                    {{ form_widget(form.price, {'attr': {'class': 'form-control', 'placeholder' : 'Precio'}}) }}
+                    {{ form_widget(form.price, {'attr': {'class': 'form-control', 'placeholder' : 'Precio'  | trans  }}) }}
                     <span class="text-danger">{{ form_errors(form.price) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.name) }}
-                    {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder' : 'Nombre'}}) }}
+                    {{ form_widget(form.name, {'attr': {'class': 'form-control', 'placeholder' : 'Nombre'  | trans }}) }}
                     <span class="text-danger">{{ form_errors(form.name) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.address) }}
-                    {{ form_widget(form.address, {'attr': {'class': 'form-control', 'placeholder' : 'Dirección'}}) }}
+                    {{ form_widget(form.address, {'attr': {'class': 'form-control', 'placeholder' : 'Direccion'  | trans }}) }}
                     <span class="text-danger">{{ form_errors(form.address) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.email) }}
-                    {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder' : 'Email'}}) }}
+                    {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder' : 'Email'  | trans }}) }}
                     <span class="text-danger">{{ form_errors(form.email) }}</span>
                 </div>
 
                 <div class="form-group">
                     {{ form_label(form.password) }}
-                    {{ form_widget(form.password, {'attr': {'class': 'form-control', 'placeholder' : 'Password'}}) }}
+                    {{ form_widget(form.password, {'attr': {'class': 'form-control', 'placeholder' : 'Password'  | trans }}) }}
                     <span class="text-danger">{{ form_errors(form.password) }}</span>
                 </div>
 

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>Seccion del Inmueble</source>
+                <target>Property section</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Anadir inmueble</source>
+                <target>Add property</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Nombre</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Descripcion</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Duracion</source>
+                <target>Time</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Author</source>
+                <target>Author</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Acciones</source>
+                <target>Actions</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>View</source>
+                <target>View</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Edit</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Delete</source>
+                <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>Inmueble</source>
+                <target>Property</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Anadir nuevo inmueble</source>
+                <target>Add new property</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Nombre</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Nombre del inmueble</source>
+                <target>Property name</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Descripcion</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>Direccion</source>
+                <target>Address</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>Precio</source>
+                <target>Price</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Seleccionar</source>
+                <target>Select</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Guardar inmueble</source>
+                <target>Save property</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Ver</source>
+                <target>View</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>Editar</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>Borrar</source>
+                <target>Delete</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
