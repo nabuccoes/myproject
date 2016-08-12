@@ -1,0 +1,23 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="page-header">
+                    <h1>{{ user.username }}<br>
+                        <small>{{ user.email }}</small>
+                    </h1>
+                </div>
+                <ul class="list-style-none">
+                    <li><span class="mv-label">Nombre:</span> {{ user.username }}</li>
+                    <li><span class="mv-label">Email:</span> {{ user.email }}</li>
+                    <li><span class="mv-label">Creación:</span> {{ user.createdAt|date('d-m-Y H:i')}}</li>
+                    <li><span class="mv-label">Actualización:</span> {{ user.updatedAt|date('d-m-Y H:i')}}</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

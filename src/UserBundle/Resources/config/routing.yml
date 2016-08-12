@@ -1,0 +1,55 @@
+user_list:
+    path:     /{_locale}/user
+    defaults: { _controller: UserBundle:User:getAll, _locale: en }
+    requirements:
+        _locale: en|es
+
+user_add:
+    path:      /{_locale}/user/add
+    defaults:  {  _controller: UserBundle:User:add, _locale: en }
+    requirements:
+        _locale: en|es
+
+user_insert:
+    path:      /{_locale}/user/inset
+    defaults:  {  _controller: UserBundle:User:insert, _locale: en }
+    methods: POST
+    requirements:
+        _locale: en|es
+
+user_insert_redirect:
+    path:      /{_locale}/user/inset
+    defaults:
+        _controller: UserBundle:User:add, _locale: en
+        path: user/add
+        permanent: true
+    requirements:
+        _locale: en|es
+
+user_mod:
+    path:      /{_locale}/user/mod/{id}
+    defaults:  {  _controller: UserBundle:User:mod, _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+user_del:
+    path:      /{_locale}/user/del/{id}
+    defaults:  {  _controller: UserBundle:User:del, _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+user_get:
+    path:      /{_locale}/user/{id}
+    defaults:  {  _controller: UserBundle:User:getById, _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
+
+recipe_get_recipes:
+    path:      /{_locale}/user/recipes/{userId}
+    defaults:  {  _controller: RecipeBundle:Recipe:getByUserId, _locale: en }
+    requirements:
+        id: \d+
+        _locale: en|es
