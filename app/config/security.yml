@@ -5,7 +5,10 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    samuel:  { password: samuelpass, roles: 'ROLE_USER' }
+                    admin: { password: admin, roles: 'ROLE_ADMIN' }
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -22,3 +25,12 @@ security:
 
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+        secured_area:
+                    pattern:    ^/
+                    anonymous: ~
+                    http_basic:
+                        realm: "Admin Area"
+    access_control:
+            - { path: ^/admin, roles: ROLE_ADMIN }
+    encoders:
+        UserBundle\Entity\User: plaintext
